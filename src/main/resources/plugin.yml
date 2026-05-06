@@ -1,0 +1,28 @@
+name: NBTEnchanter
+version: '1.0.0'
+main: com.blockmart.nbtenchanter.NBTEnchanter
+api-version: '1.20'
+author: harsh
+description: Custom enchantments via NBT tags.
+commands:
+  nbt enchant: 
+    description: Add a custom NBT enchantment.
+    usage: /nbt enchant <key> <value>
+    permission: nbtenchanter.command.enchant
+  nbt remove: 
+    description: Remove a custom NBT enchantment.
+    usage: /nbt remove <key>
+    permission: nbtenchanter.command.remove
+permissions:
+  nbtenchanter.command.enchant:
+    description: Allows enchanting items with NBT.
+    default: op
+  nbtenchanter.command.remove:
+    description: Allows removing NBT enchantments from items.
+    default: op
+  nbtenchanter.effect.glowing:
+    description: Allows items with 'glowing' NBT to glow.
+    default: true
+  nbtenchanter.effect.fire_aspect:
+    description: Allows items with 'fire_aspect' NBT to apply fire.
+    default: true
